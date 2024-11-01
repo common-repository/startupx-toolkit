@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Slider
+# Clients
+--------------------------------------------------------------*/
+
+
+/* Slider
+------------------------------------------------------------- */
+.block--image-slider{
+	position: relative;
+}
+
+.block--image-slider .slider-inner{
+	align-items: center;
+}
+
+.block--image-slider .slider-inner .slider-slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.block--image-slider .slider-inner .content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	flex-direction: column;
+	padding: 30px;
+}
+
+.block--image-slider .slider-inner .content .title{
+	margin-top: 0px;
+}
+
+.block--image-slider .slider-inner .slider-image{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	outline: none;
+}
+
+.block--image-slider .slider-inner .slider-image img{
+	width: 100%;
+	position: relative;
+	vertical-align: bottom;
+}
+
+.block--image-slider .slide-next,
+.block--image-slider .slide-previous{
+	top: 50%;
+	z-index: 101;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transition: all 0.5s cubic-bezier(0.29, 0.65, 0.58, 1);
+	-webkit-transition: all 0.5s cubic-bezier(0.29, 0.65, 0.58, 1);
+}
+
+.block--image-slider .slide-previous{
+	left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block--image-slider .slide-next{
+	right: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block--image-slider:hover .slide-next,
+.block--image-slider:hover .slide-previous{
+	opacity: 1;
+	visibility: visible;
+}
+
+.block--image-slider .swiper-pagination{
+	display: flex;
+	align-items: center;
+}
+
+.block--image-slider .swiper-pagination span{
+	opacity: 1;
+}
+
+/* Clients
+------------------------------------------------------------- */
+.block--clients-slider{
+	padding: 30px 0;
+	position: relative;
+}
+
+.block--clients-slider .clients-inner{
+	align-items: center;
+}
+
+.block--clients-slider .clients-inner .client-slide{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.block--clients-slider .slide-previous,
+.block--clients-slider .slide-next{
+	top: 50%;
+	opacity: 0;
+	z-index: 101;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	cursor: pointer;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transition: all 0.5s cubic-bezier(0.29, 0.65, 0.58, 1);
+	-webkit-transition: all 0.5s cubic-bezier(0.29, 0.65, 0.58, 1);
+}
+
+.block--clients-slider .slide-previous{
+	left: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block--clients-slider .slide-next{
+	right: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block--clients-slider:hover .slide-next,
+.block--clients-slider:hover .slide-previous{
+	opacity: 1;
+	visibility: visible;
+}
